@@ -1,0 +1,73 @@
+html,body,canvas{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin:0;
+    position: fixed;
+    background: linear-gradient(45deg, #0a0a2a, #1a0033);
+    overflow: hidden;
+}
+
+.title {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Times new roman', sans-serif;
+    color: white;
+    text-align: center;
+    z-index: 100;
+    pointer-events: none;
+    opacity: 0.3;
+    text-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    font-size: 2em;
+    
+}
+
+.explorar{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 15px 40px;
+    border: 2px solid #00ffff;
+    border-radius: 50px;
+
+    background: rgba(0, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+
+    color: #00ffff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 3px;
+
+    cursor: pointer;
+    z-index: 1000;
+
+    box-shadow:
+        0 0 10px #00ffff,
+        0 0 20px #00ffff,
+        0 0 40px #0088ff;
+
+    transition: all 0.3s ease;
+}
+
+.explorar:hover{
+    transform: translate(-50%, -50%) scale(1.1);
+
+    background: rgba(0, 255, 255, 0.3);
+
+    box-shadow:
+        0 0 20px #00ffff,
+        0 0 40px #00ffff,
+        0 0 80px #0088ff;
+}
+
+.oculto{
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.8s ease;
+}
+
